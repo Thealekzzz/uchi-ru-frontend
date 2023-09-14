@@ -1,0 +1,16 @@
+.container {
+  box-sizing: border-box;
+
+  width: 100%;
+  height: 100%;
+  max-width: 1440px;
+
+  padding: 0 60px;
+  margin: 60px auto;
+}
+
+@media (max-width: 610px) {
+  .container {
+    padding: 0 20px;
+  }
+}

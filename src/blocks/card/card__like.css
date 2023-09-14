@@ -1,0 +1,27 @@
+.card__like {
+  position: absolute;
+  bottom: 3px;
+  right: 0px;
+
+  visibility: hidden;
+  opacity: 0;
+
+  cursor: pointer;
+  transition: 
+    transform .2s cubic-bezier(0.075, 0.82, 0.165, 1),
+    opacity .2s cubic-bezier(0.075, 0.82, 0.165, 1),
+    visibility .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.card:hover .card__like {
+  visibility: visible;
+  opacity: 1;
+}
+
+.card__like:hover {
+  transform: scale(1.1);
+}
+
+.card__like:active {
+  transform: scale(0.9);
+}

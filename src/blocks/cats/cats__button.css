@@ -1,0 +1,34 @@
+.cats__button {
+  /* width: 140px;
+  height: 40px; */
+
+  padding: 0 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  background-color: rgba(33, 150, 243, 1);
+  color: white;
+
+  transition:
+    background-color .2s,
+    transform .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.cats__button:hover {
+  background-color: rgba(33, 130, 223, 1);
+}
+
+.cats__button:active {
+  transform: scale(.95);
+}
+
+.cats__button > img {
+  transition: transform .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.cats__button:hover > img {
+  transform: translateX(4px);
+}

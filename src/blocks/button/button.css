@@ -1,0 +1,36 @@
+.button {
+  width: 200px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background-color: black;
+
+  border: none;
+  border-radius: 8px;
+
+  color: white;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 
+    opacity .1s cubic-bezier(0.075, 0.82, 0.165, 1),
+    transform .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.button:not(:disabled):hover {
+  opacity: .85;
+}
+
+.button:not(:disabled):active {
+  transform: scale(.94);
+}
+
+.button:disabled {
+  opacity: .6;
+}
